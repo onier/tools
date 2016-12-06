@@ -6,7 +6,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JTable;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
+import sun.swing.DefaultLookup;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -23,7 +25,7 @@ public class StateTableRenderder implements TableCellRenderer {
     private JProgressBar processBar = new JProgressBar();
     private JButton button = new JButton();
 
-    public StateTableRenderder() {
+    public StateTableRenderder() { 
         render.setLayout(new BorderLayout());
         render.add(processBar, BorderLayout.WEST);
         render.add(button, BorderLayout.CENTER);
